@@ -1,0 +1,27 @@
+nav.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+}
+
+ul.nav__tags {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+ul.nav__tags li.nav__tags_items {
+  flex: 2;
+}
+ul.nav__tags li.nav__tags_items a {
+  text-decoration: none;
+}
+.nav__search {
+  flex: 1;
+}
+.profile__section {
+  flex: 1;
+}
