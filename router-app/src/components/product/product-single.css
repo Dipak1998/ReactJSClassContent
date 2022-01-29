@@ -1,0 +1,12 @@
+.single__product{
+    padding: 40px;
+    text-align: center;
+}
+.product__title{
+    text-align: center;
+}
+.product__img{
+    width: 560px;
+    height: 720px;
+    vertical-align: middle;
+}

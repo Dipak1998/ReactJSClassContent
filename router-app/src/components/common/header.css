@@ -19,6 +19,9 @@ ul.nav__tags li.nav__tags_items {
 ul.nav__tags li.nav__tags_items a {
   text-decoration: none;
 }
+ul.nav__tags li.nav__tags_items a.active{
+  color:green;
+}
 .nav__search {
   flex: 1;
 }
