@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom'
 import './product.css'
 const Product = () => {
 
-  const [product, setProduct] = useState([])
+  const [allProduct, setAllProduct] = useState([])
 
   useEffect(() => {
     getAllProduct()
-  }, [])
+  },[allProduct])
 
-  const getAllProduct =()=>{
+  const  getAllProduct  =()=>{
     fetch('https://fakestoreapi.com/products').then(res => res.json())
     .then(data => {
       console.log(data)
-      setProduct(data)
+      setAllProduct(data)
     })
   }
-  console.log(product)
+  console.log(allProduct)
 
   // console.log("data is :", data)
   return (
@@ -25,7 +25,7 @@ const Product = () => {
       <h1>Product</h1>
       <div className='product__wrapper'>
         {
-          product.map((product,key)=>{
+          allProduct.map((product,key)=>{
             return(
               <Link to= {"/product/" + product.id} className='product__card' key={key}>
                 <p className='title'>{product.title}</p>
