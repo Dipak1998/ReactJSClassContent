@@ -28,3 +28,22 @@ ul.nav__tags li.nav__tags_items a.active{
 .profile__section {
   flex: 1;
 }
+.cart{
+  flex: 0.5;
+}
+.cart a{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart a i{
+  font-size: 24px;
+  margin-right: 4px;
+}
+.cart a span.cart__count{
+  font-size: 14px;
+  font-weight: bold;
+}

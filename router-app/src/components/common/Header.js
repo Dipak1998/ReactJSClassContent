@@ -28,6 +28,12 @@ const Header = () => {
         <div className='profile__section'>
           <button>Login/SignUp</button>
         </div>
+      <div className='cart'>
+          <NavLink to='/cart'>
+            <i className='fa fa-shopping-cart'></i>
+            <span className='cart__count'>0</span>
+            </NavLink>
+      </div>
       </nav>
     </>
     // <nav className='navbar'>

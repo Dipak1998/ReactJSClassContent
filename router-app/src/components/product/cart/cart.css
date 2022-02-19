@@ -1,0 +1,27 @@
+.cart__section{
+    padding: 20px
+}
+.cart__heading{
+    text-align: center;
+}
+.cart__cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.cart_card_item {
+    min-width: 500px;
+    display: flex;
+    flex: 1;
+    margin: 20px 40px;
+    justify-content: center;
+    align-items: center;
+}
+.cart_card_item >*{
+    /* flex: 1; */
+    padding: 0 10px;
+}
+.cart_card_item img{
+    width: 60px;
+}

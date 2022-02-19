@@ -31,7 +31,7 @@ const ProductDetails = () => {
           <img className='product__img' src={singleProduct.image} />
           <p className='product__des' >{singleProduct.description}</p>
           <p>Price:${singleProduct.price}</p>
-          <p>Rating: {singleProduct.rating.rate ? singleProduct.rating.rate : ''}</p>
+          {/* <p>Rating: {singleProduct.rating.rate ? singleProduct.rating.rate : ''}</p> */}
         </div>
           
     )

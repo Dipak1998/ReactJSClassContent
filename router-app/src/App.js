@@ -7,6 +7,7 @@ import Product from './components/product/Product'
 import Contact from './components/Contact'
 import Footer from './components/common/Footer'
 import ProductDetails from './components/product/ProductDetails'
+import Cart from './components/product/cart/Cart'
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path='/product/' element={<Product />} exact />
           <Route path='/product/:id' element={<ProductDetails/>} exact />
           <Route path='/contact' element={<Contact />} exact />
+          <Route path='cart' element={<Cart/>} exact/>
         </Routes>
       </Router>
       <Footer />
