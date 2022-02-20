@@ -1,4 +1,4 @@
-.product{
+/* .product{
     padding: 20px 40px;
 }
 
@@ -28,4 +28,34 @@ a.product__card{
     font-size: 18px;
 
 }
-
+ */
+ .product {
+    padding: 20px 40px;
+  }
+  
+  .product__wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  a.product__card {
+    text-decoration: none;
+    color: black;
+    max-width: 360px;
+    text-align: center;
+  }
+  .product__card {
+    border: 1px solid black;
+    margin: 4px;
+    padding: 10px;
+  }
+  .product__card img {
+    width: 200px;
+    vertical-align: middle;
+  }
+  .product__card p.title {
+    font-weight: bold;
+    font-size: 18px;
+  }

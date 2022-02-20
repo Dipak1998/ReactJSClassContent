@@ -23,7 +23,7 @@ const Header = () => {
           </li>
         </ul>
         <div className='nav__search'>
-          <input type='search' />
+          <input type='search'  placeholder='Search by name'/>
         </div>
         <div className='profile__section'>
           <button>Login/SignUp</button>

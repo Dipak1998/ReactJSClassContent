@@ -1,9 +1,23 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import './cart.css'
 
 const Cart = () => {
 
     const [cartList, setCartList] = useState([])
+    const [cartListData, setCartListData] = useState([])
+    useEffect( ()=>{
+        getAllCart()
+    },[])
+
+    // get all cart data
+    const getAllCart =()=>{
+        fetch('https://fakestoreapi.com/carts/user/2')
+            .then(res=>res.json())
+            .then(data=>{
+                console.log(data[0].products);
+                setCartList(data[0].products)
+            })
+    }
 
     // satic cartData
     const cartProduct = {
